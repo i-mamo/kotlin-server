@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=dev'
+      - 'POSTGRES_USER=develop'
+      - 'POSTGRES_PASSWORD=develop'
+    ports:
+      - '5432'
